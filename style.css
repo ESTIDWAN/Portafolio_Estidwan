@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --color-title:rgb(90, 85, 85);
+    --color--content:white;
+    --color-iconos-habilidades:rgb(44, 41, 41);
+}
+body{
+    background: black;
+}
+
+.photo img{
+    width:165px ;
+    height: 191px;
+    border-radius: 50%;
+}
+.toggle-menu{
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    filter: invert(1);
+    z-index: 1;
+}
+@media screen and (min-width:768px) {
+    .toggle-menu{
+        display: none;
+    }
+}
+.main-menu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:black;
+    color: rgb(229, 226, 226);
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+}
+.main-menu--show{
+    transform: translateY(0);
+}
+
+@media screen and (min-width:768px) {
+    .main-menu{
+        flex-direction: row;
+        transform: translateY(0);
+    }
+}
+.main-menu_items{
+    padding: 1em;
+}
+.main-menu_link{
+    color: rgb(237, 239, 239);
+    text-decoration: none;
+}
+.container{
+    display: grid;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container .photo{
+    text-align: center;
+}
+.titulo h3{
+    font-size:1.5rem;
+    text-align: center;
+    color: rgb(177, 172, 163);
+}
+.titulo h1{
+    font-size:2rem;
+    text-align: center;
+    color: white;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    gap:20px;
+}
+ /* .icon1{
+    background:#212020;
+    padding: 20px;
+    border-radius: 50%;
+} */
+.acerca{
+    text-align: center;
+}
+#title_acerca{
+    font-size: 1.5rem;
+}
+
+section .paragrap{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+/*-----------------------------------------------------------------------------------*/
+/* .habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.habilidades1{
+    width: 100%;
+    display: flex;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades2{
+    width: 100%;
+   display: flex;
+   gap: 50px;
+   justify-content: center;
+   align-items: center;    
+}
+
+.icon1 .svg{
+    border-radius:50%;
+    padding: 20px;
+    background:var(--color-iconos-habilidades);
+}
+.icon2 .svg{
+    border-radius:50%;
+    padding: 20px;
+    background:var(--color-iconos-habilidades);
+}
+.icon3 .svg{
+    border-radius:50%;
+    padding: 20px;
+    background:var(--color-iconos-habilidades);
+}
+.icon4 .svg{
+    border-radius:50%;
+    padding: 20px;
+    background:var(--color-iconos-habilidades);
+}
+/*--------------------------------------------------------------------------------------*/
+.halidades-title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.experiencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin: 40px;
+}
+#title_exp{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.experiencia{
+    background-color:black;
+    color: white;
+    display: flex;
+    gap:50px;
+    margin: auto;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+span{
+    font-weight: bold;
+}
+
+div.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.contac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap:30px;
+   }  
+   /* .contac .icon1{
+    border-radius:50% ;
+    border: 2px solid #ADADAD;
+    padding: 30px 15px;
+    background: rgb(8, 8, 8);
+   }
+   .contac .icon2{
+    border-radius:50% ;
+    border: 2px solid #ADADAD;
+    padding: 30px 40px;
+    background: rgb(8, 8, 8);
+   } */
+   .icon-contac1 .icon_1{
+    border-radius: 50%;
+    border: 1px solid #ADADAD;
+    padding: 20px;
+   }
+   .icon-contac2 .icon_2{
+    border-radius: 50%;
+    border: 1px solid #ADADAD;
+    padding: 20px;
+   }
+   .footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 1rem;
+   }
+
+   @media screen and (min-width:800px) {
+   .container{
+    display:flex;
+    flex-direction: column; 
+   }
+   .main-menu{
+    display: flex;
+    justify-content: end;
+   }
+   .paragrap{
+    width: 500px;
+    margin: auto;
+   }
+   #text-gallery{
+    text-align: center;
+   }
+  div .gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   }
+   #text-content{
+    text-align: center;
+   }
+   /* */
+   .halidades-title{
+    text-align: center;
+}
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+}
+@media (max-width:600px) {
+    .habilidades1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:25px;
+    }
+    .habilidades2{
+        text-align: center;
+        line-height: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:25px;
+    }
+}
+
+/* @media (max-width:800px) {
+    .habilidades1{
+        text-align: center;
+        line-height: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:25px;
+    }
+    .habilidades2{
+        text-align: center;
+        line-height: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:25px;
+    }
+    .halidades-title{
+        font-size: 1.5rem;
+    }
+    .title_exp{
+        font-size: 1.5rem;
+    }
+} */
